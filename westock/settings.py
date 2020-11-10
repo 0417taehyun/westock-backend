@@ -14,6 +14,12 @@ SECRET_KEY = local_settings.SECRET
 
 ALGORITHM = local_settings.ALGORITHM
 
+ELASTICSEARCH_DSL={
+    'default': {
+        'hosts': 'localhost:9200'
+    },
+}
+
 INSTALLED_APPS = [
     #'django.contrib.admin',
     #'django.contrib.auth',

@@ -91,7 +91,7 @@ class ProductListView(View):
             response_data_set['Product'].append(product)
             count += 1
             if count == page_limit:
-                break;
+                break
 
         product_total        = len(all_product_list)
         page_count_condition = product_total % page_limit
